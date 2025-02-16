@@ -1,0 +1,23 @@
+.container {
+  width: 60%;
+  height: 90%;
+  background-color: yellow;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+.accordion-item {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: brown;
+  color: white;
+  border: 2px solid black;
+}
+.accordion-item:hover {
+  background-color: rgb(200, 83, 83);
+}
+.accordion-label {
+  background-color: aquamarine;
+  padding: 20px;
+  display: none;
+}
