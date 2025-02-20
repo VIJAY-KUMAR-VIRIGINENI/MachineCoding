@@ -1,0 +1,46 @@
+.container {
+  height: 800px;
+  width: 100%;
+  margin: 0px;
+  border: 1px solid black;
+  padding: 10px 40px;
+}
+
+.header {
+  height: 10%;
+  width: 100%;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  height: 10%;
+  width: 100%;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  height: 70%;
+  width: 100%;
+  align-items: space-around;
+  background-color: light-gray;
+}
+.column1 {
+  height: 100%;
+  width: 20%;
+  background-color: orange;
+}
+.column2 {
+  height: 100%;
+  width: 80%;
+  background-color: rgb(66, 213, 47);
+}
+.column3 {
+  height: 100%;
+  width: 20%;
+  background-color: orange;
+}
