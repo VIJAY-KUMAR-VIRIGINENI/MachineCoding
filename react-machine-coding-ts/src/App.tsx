@@ -5,7 +5,7 @@ import UserForm from "./components/FormValidation/UserForm";
 const App = () => {
   return (
     <>
-      <UserForm />
+      <Carousel />
     </>
   );
 };
