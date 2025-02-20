@@ -1,7 +1,11 @@
 import { FC } from "react";
 
+interface todoItem {
+  text: string;
+  completed: boolean;
+}
 interface TaskListProp {
-  itemList: string[];
+  itemList: todoItem[];
   onDelete: (index: number) => void;
   onEdit: (index: number) => void;
   onComplete: (index: number) => void;
@@ -17,8 +21,14 @@ const TaskList: FC<TaskListProp> = ({
     <>
       <ul>
         {itemList.map((item, ind) => (
-          <li key={ind}>
-            {item} <button onClick={() => onDelete(ind)}>delete</button>
+          <li
+            key={ind}
+            style={{
+              textDecoration: item.completed === true ? "line-through" : "none",
+              
+            }}
+          >
+            {item.text} <button onClick={() => onDelete(ind)}>delete</button>
             <button onClick={() => onEdit(ind)}>Edit</button>
             <button onClick={() => onComplete(ind)}>Complete</button>
           </li>
